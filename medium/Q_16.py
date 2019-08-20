@@ -1,10 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # @Time    : 2019/8/20 19:22
-# @Author  : 陈慷
-# @Site    : 
-# @File    : Q_16.py
-# @Software: PyCharm
+# @Author  : ck
 """
 题目：<最接近的三数之和>
     给定一个包括 n 个整数的数组 nums 和 一个目标值 target。
