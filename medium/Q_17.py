@@ -14,3 +14,34 @@
     说明:
     尽管上面的答案是按字典序排列的，但是你可以任意选择答案输出的顺序。
 """
+# a = ["a", "b", "c"]
+# b = ["q", "w", "e"]
+# m = [x + y for x in a for y in b]
+# print(m)
+from typing import List
+
+
+class Solution:
+    def letterCombinations(self, digits: str) -> List[str]:
+        m = {
+            '2': list('abc'),
+            '3': list('def'),
+            '4': list('ghi'),
+            '5': list('jkl'),
+            '6': list('mno'),
+            '7': list('pqrs'),
+            '8': list('tuv'),
+            '9': list('wxyz'),
+            }
+        if not digits: return []
+        ls1 = ['']
+        for i in digits:
+            ls1 = [x + y for x in ls1 for y in m[i]]
+        return ls1
+
+
+if __name__ == "__main__":
+    s = Solution()
+    digits = "23"
+    result = s.letterCombinations(digits)
+    print(result)
