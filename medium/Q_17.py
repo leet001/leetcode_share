@@ -33,7 +33,8 @@ class Solution:
             '8': list('tuv'),
             '9': list('wxyz'),
             }
-        if not digits: return []
+        if not digits:
+            return []
         ls1 = ['']
         for i in digits:
             ls1 = [x + y for x in ls1 for y in m[i]]
