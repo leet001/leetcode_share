@@ -25,10 +25,11 @@
 """
 
 import bisect
+from typing import List
 
 
 class Solution:
-    def search(self, nums, target) -> int:
+    def search(self, nums: List, target: int) -> int:
         """
         二分法找到断点的位置恢复原始数组，然后正常二分法即可
         python 中 bisect 模块针对的是 list, 如果直接构造 list，
